@@ -1,0 +1,24 @@
+[target.wasm32-unknown-emscripten]
+rustflags = [
+    "-C", "link-arg=-s", "-C" ,"link-arg=WEBGL2_BACKWARDS_COMPATIBILITY_EMULATION=1",
+    "-C", "link-arg=-s", "-C", "link-arg=USE_SDL=2",
+    "-C", "link-arg=-s", "-C", "link-arg=MIN_WEBGL_VERSION=2",
+    "-C", "link-arg=-s", "-C", "link-arg=MAX_WEBGL_VERSION=2",
+    "-C", "link-arg=--embed-file", "-C", "link-arg=resources/fire.png",
+    "-C", "link-arg=--embed-file", "-C", "link-arg=resources/yellow.png",
+    "-C", "link-arg=--embed-file", "-C", "link-arg=resources/font.png",
+    "-C", "link-arg=--embed-file", "-C", "link-arg=resources/models/moon_lander_texture.png",
+    "-C", "link-arg=--embed-file", "-C", "link-arg=resources/models/moon_lander.mtl",
+    "-C", "link-arg=--embed-file", "-C", "link-arg=resources/models/moon_lander.obj",
+    "-C", "link-arg=--embed-file", "-C", "link-arg=resources/models/launchpad.png",
+    "-C", "link-arg=--embed-file", "-C", "link-arg=resources/models/launchpad.mtl",
+    "-C", "link-arg=--embed-file", "-C", "link-arg=resources/models/launchpad.obj",
+    "-C", "link-arg=--embed-file", "-C", "link-arg=resources/ground.png",
+    "-C", "link-arg=--embed-file", "-C", "link-arg=resources/models/rescue.png",
+    "-C", "link-arg=--embed-file", "-C", "link-arg=resources/models/rescue.mtl",
+    "-C", "link-arg=--embed-file", "-C", "link-arg=resources/models/rescue.obj",
+    "-C", "link-arg=--embed-file", "-C", "link-arg=resources/loading.png",
+    "-C", "link-arg=--embed-file", "-C", "link-arg=resources/loading2.png",
+    "-C", "link-arg=-s", "-C", "link-arg=EXTRA_EXPORTED_RUNTIME_METHODS=[\"ccall\",\"cwrap\"]",
+    "-Clink-args=--js-library main.js"
+]
