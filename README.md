@@ -10,6 +10,8 @@ YouTube demo
 [![youtube video](https://img.youtube.com/vi/Kmm_hlNORZU/0.jpg)](https://youtu.be/Kmm_hlNORZU)
 
 
+I hosted the WASM version here https://bjason.org/en/wasm/rust-lander/
+
 to run standalone
 ```
 cargo build
