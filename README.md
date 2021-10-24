@@ -1,19 +1,12 @@
-# Rust Invaders
-
-# TO DO
-
-Then it is loading  screen but perhaps in javascript for a change.
-
---------------------------------------
-
-
+# Rust Lander
 
 A 3d rust game using OpenGl and Emscripten to build for the wasm32-unknown-emscripten.
-It can also run standalone
+It can also run standalone, developed and tested on Linux but will
+work on Windows, see some of the other Rust projects in this repo.
 
 ![screenshot](screenshot.png)
 
-standalone
+to run standalone
 ```
 cargo build
 cargo run
@@ -24,12 +17,7 @@ For web deployment
 cargo build --target=wasm32-unknown-emscripten 
 ```
 
-To try web locally
+To try web version locally having built to emscripten target try script
 ```
 ./run_wasm.sh
-```
-
-to run the release you'll need to deploy in a webserver, e.g.
-```
-python3 -m http.server 8000
 ```

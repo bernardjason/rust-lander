@@ -20,21 +20,14 @@ use crate::handle_javascript::start_game;
 use crate::handle_javascript::start_javascript_play_sound;
 use crate::handle_javascript::write_stats_data;
 use crate::lander_main_player::LanderMainPlayer;
-//use crate::landscape::{AtCell, Landscape, MAX, SQUARE_COLUMNS, SQUARE_ROWS};
 
 use crate::openglshadow::OpenglShadow;
-//use std::borrow::{Borrow, BorrowMut};
 use crate::gl_helper::draw_text::DrawText;
 use crate::gl_helper::loading_screen::LoadingScreen;
 use crate::special_effects::SpecialEffects;
 use crate::end_screen::EndScreen;
-//use rand::{thread_rng, Rng};
 use crate::sound::{load_sound, stop, ENGINE};
-//use crate::flying_camera::Flying_Camera_Movement::DOWN;
-//use std::thread;
-//use std::sync::mpsc::channel;
-//use std::sync::Mutex;
-//use std::rc::Rc;
+
 
 pub const GROUND: f32 = 0.01;
 const TARGET_FPS: u128 = 40;
@@ -77,7 +70,6 @@ pub struct Runtime {
     slow_loading_items: bool,
     loading_screen1:LoadingScreen,
     loading_screen2:LoadingScreen,
-    //rescue:Rescue,
 }
 
 
