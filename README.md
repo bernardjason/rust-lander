@@ -6,6 +6,10 @@ work on Windows, see some of the other Rust projects in this repo.
 
 ![screenshot](screenshot.png)
 
+YouTube demo
+[![youtube video](https://img.youtube.com/vi/Kmm_hlNORZU/0.jpg)](https://youtu.be/Kmm_hlNORZU)
+
+
 to run standalone
 ```
 cargo build
